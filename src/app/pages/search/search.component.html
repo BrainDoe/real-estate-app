@@ -1,0 +1,24 @@
+<div class="search">
+  <div (click)="setSearchFilters()" class="search-toggle">
+    <div class="container">
+      <h4>Search Property By Filter <span class="material-icons">
+        filter_list
+        </span></h4>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="searchFilters" class="container">
+  <!-- <app-searchfilters></app-searchfilters> -->
+
+  <div class="filter-list">
+    <app-property 
+     *ngFor="let property of properties" 
+     [filterProperty]="property"
+    ></app-property>
+  </div>
+  <div *ngIf="!properties" class="no-result">
+    <h3>No Result Found</h3>
+  </div>
+
+</div>

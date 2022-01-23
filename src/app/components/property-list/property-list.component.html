@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="property-list">
+
+    <!-- {{ rentData.map((data: any) => data) }} -->
+    <app-property 
+      *ngFor="let properties of rentData" 
+      [rentProperty]="properties"
+      ></app-property>
+      <!-- [saleProperties]="salesProps" -->
+      
+    <!-- <app-property></app-property>
+    <app-property></app-property>
+    <app-property></app-property>
+    <app-property></app-property>
+    <app-property></app-property>
+    <app-property></app-property> -->
+  </div>
+</div>

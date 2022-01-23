@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="banner-container">
+    <div class="banner">
+      <div class="banner-overlay">
+        <div class="banner-content">
+          <h2>Nice Home</h2>
+          <p>Acquire this house</p>
+        </div>
+      </div>
+    </div>
+    <div class="home-details">
+      <h5>{{ purpose1 }}</h5>
+      <h3>{{ title1 }}{{ title2 }}</h3>
+      <p>{{ desc1 }} {{ desc2 }}</p>
+      <div>
+        <button [routerLink]="[linkName]">{{ buttonText }}</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-property-list [rentData]="rentData"></app-property-list>
+
+<div class="container">
+  <div class="banner-container">
+    <div class="banner">
+      <div class="banner-overlay">
+        <div class="banner-content">
+          <h2>Nice Home</h2>
+          <p>Acquire this house</p>
+        </div>
+      </div>
+    </div>
+    <div class="home-details">
+      <h5>{{ purpose2 }}</h5>
+      <h3>{{ title11 }}{{ title22 }}</h3>
+      <p>{{ desc22 }} {{ desc22 }}</p>
+      <div>
+        <button [routerLink]="[linkName2]">{{ buttonText2 }}</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-property-list [saleData]="saleData"></app-property-list>

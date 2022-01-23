@@ -1,0 +1,7 @@
+.property-list {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 60px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,42 @@
+<div routerLink="'/property/' " class="property">
+  <img [src]="rentProperty.coverPhoto.url ? rentProperty.coverPhoto.url : '../../../assets/images/pexels-pixabay-531756.jpg'" alt="Image">
+  <div class="price-wrapper">
+    <div>
+      <span class="material-icons verify">
+        verified
+      </span>
+      <span class="price">$ {{ rentProperty.price | currency }}{{ rentProperty.rentFrequency ? '/'+rentProperty.rentFrequency : '' }}</span>
+    </div>
+    <img [src]="rentProperty.agency.logo ? rentProperty.agency.logo.url : '../../../assets/images/background.jpeg'" alt="Image">
+  </div>
+  <p>{{ rentProperty.title.length > 30 ? rentProperty.title.substring(0, 30) + '...' : rentProperty.title }}</p>
+</div>
+
+<!-- <div routerLink="'/property/' " class="property">
+  <img [src]="saleProperties.coverPhoto ? saleProperties.coverPhoto.url : '../../../assets/images/pexels-pixabay-531756.jpg'" alt="Image">
+  <div class="price-wrapper">
+    <div>
+      <span *ngIf="saleProperties.isVerified" class="material-icons verify">
+        verified
+      </span>
+      <span class="price">$ {{ saleProperties.price | currency }}{{ rentProperty.rentFrequency ? '/'+rentProperty.rentFrequency : '' }}</span>
+    </div>
+    <img [src]="saleProperties.agency.logo ? saleProperties.agency.logo.url : '../../../assets/images/background.jpeg'" alt="Image">
+  </div>
+  <p>{{ saleProperties.title.length > 30 ? saleProperties.title.substring(0, 30) + '...' : saleProperties.title }}</p>
+</div> -->
+<!-- <p>Interconnecting Duplexes | 2Bedroom...</p> -->
+
+<div routerLink="'/property/' " class="property">
+  <img [src]="filterProperty.coverPhoto.url ? filterProperty.coverPhoto.url : '../../../assets/images/pexels-pixabay-531756.jpg'" alt="Image">
+  <div class="price-wrapper">
+    <div>
+      <span class="material-icons verify">
+        verified
+      </span>
+      <span class="price">$ {{ filterProperty.price | currency }}{{ filterProperty.rentFrequency ? '/'+filterProperty.rentFrequency : '' }}</span>
+    </div>
+    <img [src]="filterProperty.agency.logo ? filterProperty.agency.logo.url : '../../../assets/images/background.jpeg'" alt="Image">
+  </div>
+  <p>{{ filterProperty.title.length > 30 ? filterProperty.title.substring(0, 30) + '...' : filterProperty.title }}</p>
+</div>

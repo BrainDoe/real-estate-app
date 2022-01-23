@@ -1,0 +1,25 @@
+.search {
+  width: 100%;
+}
+
+.search .search-toggle {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(217, 215, 226);
+  padding: 20px;
+  cursor: pointer;
+}
+
+.search-toggle h4 {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(110, 71, 71);
+}
+
+.filter-list {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+}
