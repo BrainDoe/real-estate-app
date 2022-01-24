@@ -18,6 +18,7 @@ export class PropertyListComponent implements OnInit {
     //   this.salesProps = data
     //   console.log(this.salesProps);
     // })
+    console.log(this.saleData);
   }
 
 }

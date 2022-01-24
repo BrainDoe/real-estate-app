@@ -14,6 +14,9 @@ import { PropertyComponent } from './components/property/property.component';
 import { PropertyListComponent } from './components/property-list/property-list.component';
 import { SearchComponent } from './pages/search/search.component';
 import { SearchfiltersComponent } from './pages/searchfilters/searchfilters.component';
+import { TestComponent } from './components/test/test.component';
+import { Page1Component } from './pages/page1/page1.component';
+import { Page2Component } from './pages/page2/page2.component';
 
 
 @NgModule({
@@ -25,7 +28,10 @@ import { SearchfiltersComponent } from './pages/searchfilters/searchfilters.comp
     PropertyComponent,
     PropertyListComponent,
     SearchComponent,
-    SearchfiltersComponent
+    SearchfiltersComponent,
+    TestComponent,
+    Page1Component,
+    Page2Component
   ],
   imports: [
     BrowserModule,

@@ -7,13 +7,14 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class PropertyComponent implements OnInit {
   @Input() rentProperty: any;
-  // @Input() saleProperties: any;
+  @Input() saleProperties: any;
 
   @Input() filterProperty: any;
 
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.saleProperties)
   }
 
 }

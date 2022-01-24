@@ -40,7 +40,7 @@ export class HomeComponent implements OnInit {
 
     this.apiService.getHouseType(this.salePurpose).subscribe((data) => {
       //@ts-ignore
-      this.saleData = data
+      this.saleData = data.hits
       console.log(this.saleData);
     })
   }
