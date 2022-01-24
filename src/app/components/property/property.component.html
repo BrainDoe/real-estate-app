@@ -8,7 +8,9 @@
       </span>
       <span class="price">{{ rentProperty?.price | currency }}{{ rentProperty?.rentFrequency ? '/'+rentProperty.rentFrequency : '' }}</span>
     </div>
-    <img [src]="rentProperty?.agency?.logo ? rentProperty?.agency?.logo.url : '../../../assets/images/background.jpeg'" alt="Image">
+    <div style="margin-top: 10px;">
+      <img [src]="rentProperty?.agency?.logo ? rentProperty?.agency?.logo.url : '../../../assets/images/background.jpeg'" alt="Image">
+    </div>
   </div>
   <p>{{ rentProperty?.title?.length > 30 ? rentProperty?.title.substring(0, 30) + '...' : rentProperty?.title }}</p>
 </div>
