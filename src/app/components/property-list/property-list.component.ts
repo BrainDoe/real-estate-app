@@ -14,11 +14,7 @@ export class PropertyListComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    // this.saleData.map((data: any) => {
-    //   this.salesProps = data
-    //   console.log(this.salesProps);
-    // })
-    console.log(this.saleData);
+    
   }
 
 }

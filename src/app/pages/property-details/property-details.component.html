@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="img-container">
+    <img [src]="propertyDetails ? propertyDetails?.photos[0].url : '../../../assets/images/background.jpeg'" alt="Property Image">
+  </div>
+  <div class="property-details">
+    <div class="price-wrapper">
+      <div>
+        <span class="material-icons verify">
+          verified
+        </span>
+        <span class="price">{{ propertyDetails?.price | currency }}{{ propertyDetails?.rentFrequency ? '/'+propertyDetails.rentFrequency : '' }}</span>
+      </div>
+      <img [src]="propertyDetails?.agency?.logo ? propertyDetails?.agency?.logo.url : '../../../assets/images/background.jpeg'" alt="Image">
+    </div>
+    <p>{{ propertyDetails?.title}}</p>
+    <div class="property-info">
+      <p>{{ propertyDetails.description }}</p>
+      <div class="more-info">
+        <div>
+          <h4>TYPE: &nbsp; &nbsp;</h4><span>{{ propertyDetails.type }}</span>
+        </div>
+        <div>
+          <h4>PURPOSE: &nbsp; &nbsp;</h4> <span>{{ propertyDetails.purpose }}</span>
+        </div>
+        <div>
+          <h4>FURNISHING STATUS: &nbsp; &nbsp;</h4><span>{{ propertyDetails.status && propertyDetails.furnishingStatus }}</span>
+        </div>
+        <div *ngIf="propertyDetails.length" class="amenities">
+          <div *ngFor="amenities of propertyDetails?.amenities">
+            <div *ngFor="let item in amenities">
+              <h3>Amenities</h3>
+              <span>{{ item.text }}</span>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </div>
+</div>

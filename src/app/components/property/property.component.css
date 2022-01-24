@@ -49,3 +49,18 @@
   color: rgb(69, 69, 73);
   font-size: 17px;
 }
+
+@media (max-width: 500px) {
+  .property {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    /* justify-content: center;
+    align-content: center; */
+  }
+
+  .property img {
+    margin: 0;
+  }
+}

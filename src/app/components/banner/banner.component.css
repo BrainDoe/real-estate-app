@@ -3,7 +3,7 @@
   /* align-items: center; */
   /* justify-content: center; */
   width: 100%;
-  margin-top: 40;
+  margin-top: 40px;
   margin-bottom: 30px;
 }
 
@@ -90,5 +90,17 @@ button {
 .home-details button:hover,
 .home-details button:active {
   background-color: rgb(170, 170, 221);
+}
+
+@media (max-width: 500px) {
+  .banner-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .banner-container .banner {
+    width: 100%;
+  }
 }
 

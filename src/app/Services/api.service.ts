@@ -49,5 +49,9 @@ export class ApiService {
     return this.http.get<any>(`${this.baseUrl}/properties/list?locationExternalIDs=${locationIDs}&${purpose}&${categoryExternalID}&${bathsMin}&${rentFrequency}&${priceMin}&${maxPrice}&${roomsMin}&${sort}&${areaMax}`, options).pipe(map((data) => data));
   }
 
+  propertyDetails(id: string): Observable<any> {
+    return this.http.get<any>(`${this.baseUrl}/properties/detail?externalID=${id}`, options).pipe(map((data: any) => data));
+  }
+
 
 }

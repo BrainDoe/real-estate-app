@@ -14,7 +14,6 @@ export class PropertyComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.saleProperties)
   }
 
 }
